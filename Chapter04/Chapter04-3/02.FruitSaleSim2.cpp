@@ -1,4 +1,4 @@
-// °úÀÏÆÇ¸Å Å¬·¡½ºÀÇ »ı¼ºÀÚ Ãß°¡¹öÀü
+// ê³¼ì¼íŒë§¤ í´ë˜ìŠ¤ì˜ ìƒì„±ì ì¶”ê°€ë²„ì „
 
 #include <iostream>
 using namespace std;
@@ -28,8 +28,8 @@ public:
 
     void ShowSalesResult() const
     {
-        cout << "³²Àº »ç°ú: " << numOfApples << endl;
-        cout << "ÆÇ¸Å ¼öÀÍ: " << myMoney << endl;
+        cout << "ë‚¨ì€ ì‚¬ê³¼: " << numOfApples << endl;
+        cout << "íŒë§¤ ìˆ˜ìµ: " << myMoney << endl;
     }
 };
 
@@ -54,8 +54,8 @@ public:
 
     void ShowBuyResult() const
     {
-        cout << "ÇöÀç ÀÜ¾×: " << myMoney << endl;
-        cout << "»ç°ú °³¼ö: " << numOfApples << endl
+        cout << "í˜„ì¬ ì”ì•¡: " << myMoney << endl;
+        cout << "ì‚¬ê³¼ ê°œìˆ˜: " << numOfApples << endl
              << endl;
     }
 };
@@ -66,9 +66,9 @@ int main(void)
     FruitBuyer buyer(5000);
     buyer.BuyApples(seller, 2000);
 
-    cout << "°úÀÏ ÆÇ¸ÅÀÚÀÇ ÇöÈ²" << endl;
+    cout << "ê³¼ì¼ íŒë§¤ìì˜ í˜„í™©" << endl;
     seller.ShowSalesResult();
-    cout << "°úÀÏ ±¸¸ÅÀÚÀÇ ÇöÈ²" << endl;
+    cout << "ê³¼ì¼ êµ¬ë§¤ìì˜ í˜„í™©" << endl;
     buyer.ShowBuyResult();
 
     return 0;
